@@ -1,0 +1,4 @@
+{
+   "train_file" : "train.csv",
+   "templates_file" : "templates.txt"
+}
