@@ -24,17 +24,17 @@ public:
     }
 
     /**
-     * It makes sense to use json here
+     * Parses config file
      */
     void init();
 
     /**
-     * Gets file to train intent classifier
+     * @return file to train intent classifier
      */
     fs::path get_train() const { return m_train_file; }
 
     /**
-     * Gets file with templates
+     * @return file with templates
      */
     fs::path get_templates() const { return m_templates_file; }
 

@@ -13,14 +13,10 @@ namespace mbient {
 class IntentRecognizer
 {
 public:
-    IntentRecognizer(const Config & config) :
-        m_config(config)
-    {}
-
     /**
      * Initializes internal structures from config
      */
-    void init();
+    void init(const Config & config);
 
     /**
      * Recognizes an intent and its entities
@@ -30,7 +26,6 @@ public:
     std::string recognize(const std::string & in);
 
 private:
-    Config m_config;
     Preprocessor m_preprocessor;
     Classifier m_classifier;
     EntitiesFinder m_entity_finder;

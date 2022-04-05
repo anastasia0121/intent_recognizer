@@ -28,6 +28,6 @@ endforeach()
 add_custom_target(resource-target ALL DEPENDS "${CMAKE_CURRENT_BINARY_DIR}/${RESOURCES}")
 
 add_subdirectory(thd/json)
-#add_subdirectory(thd/googletest)
+add_subdirectory(thd/googletest)
 add_subdirectory(src)
-#add_subdirectory(test)
+add_subdirectory(test)

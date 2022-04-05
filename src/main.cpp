@@ -70,8 +70,8 @@ int main(int argc, char ** argv)
     // But during the execution handle only the "Cancel" operation to prevent a mess.
 
     Config config("etc/config.json");
-    IntentRecognizer intent_recognizer(config);
-    intent_recognizer.init();
+    IntentRecognizer intent_recognizer;
+    intent_recognizer.init(config);
 
     for (std::string in; std::getline(std::cin, in);) {
         if (!in.empty()) {

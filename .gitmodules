@@ -1,3 +1,6 @@
 [submodule "thd/json"]
 	path = thd/json
 	url = https://github.com/nlohmann/json
+[submodule "thd/googletest"]
+	path = thd/googletest
+	url = https://github.com/google/googletest

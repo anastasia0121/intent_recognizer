@@ -2,11 +2,11 @@
 
 namespace mbient {
 
-void IntentRecognizer::init()
+void IntentRecognizer::init(const Config & config)
 {
     m_preprocessor.init();
-    m_classifier.train(m_preprocessor, m_config.get_train()); // or init from trained data
-    m_entity_finder.init(m_config.get_templates());
+    m_classifier.train(m_preprocessor, config.get_train()); // or init from trained data
+    m_entity_finder.init(config.get_templates());
 }
 
 std::string IntentRecognizer::recognize(const std::string & in)
