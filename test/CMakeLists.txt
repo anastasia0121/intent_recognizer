@@ -1,6 +1,6 @@
 set(TEST_NAME ${CMAKE_PROJECT_NAME}_test)
 
-set(TEST_SOURCES main.cpp)
+set(TEST_SOURCES main.cpp IntentRecognizerTest.cpp PreprocessorTest.cpp)
 
 add_executable(${TEST_NAME} ${TEST_SOURCES})
 

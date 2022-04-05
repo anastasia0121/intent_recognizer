@@ -23,7 +23,7 @@ std::vector<std::string> Preprocessor::tokenize(const std::string & in, const st
     return tokens;
 }
 
-std::vector<std::string> Preprocessor::prepocess(const std::string & in) const
+std::vector<std::string> Preprocessor::preprocess(const std::string & in) const
 {
     // Use natural language processing tools
     // MITIE or text2vec or Moses or other

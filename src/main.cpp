@@ -77,7 +77,7 @@ int main(int argc, char ** argv)
         if (!in.empty()) {
             std::string out = intent_recognizer.recognize(in);
             if (out.empty()) {
-                std::cout << in << " => Prints(Intent: Not found)\n";
+                std::cout << in << " => Prints (Intent: Not found)\n";
             }
             else {
                 std::cout << in << " => Prints (Intent: " << out << ")\n";

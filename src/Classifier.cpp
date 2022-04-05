@@ -29,7 +29,7 @@ void Classifier::train(const Preprocessor & preprocessor, const fs::path & data_
         std::string & intent = csv_values[0];
         std::string & sentence = csv_values[1];
 
-        std::vector<std::string> tokens = preprocessor.prepocess(sentence);
+        std::vector<std::string> tokens = preprocessor.preprocess(sentence);
         if (!intent.empty() && !tokens.empty()) {
             m_intents[intent].emplace_back(std::move(tokens));
         }

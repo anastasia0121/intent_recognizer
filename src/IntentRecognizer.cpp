@@ -18,7 +18,7 @@ std::string IntentRecognizer::recognize(const std::string & in)
     }
 
     // 2. Preprocessing
-    std::vector<std::string> tokens = m_preprocessor.prepocess(in);
+    std::vector<std::string> tokens = m_preprocessor.preprocess(in);
 
     // 3. Recognize an intent
     std::string intent = m_classifier.classify(tokens);

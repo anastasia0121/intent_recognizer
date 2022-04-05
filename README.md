@@ -3,8 +3,11 @@ This is a simple intent recognizer.
 
 # build
 mkdir build
+
 cd build
+
 cmake ../
+
 make
 
 # out
@@ -22,4 +25,4 @@ What weather in Paris => Prints (Intent: Get Weather City)
 
 Tell fact => Prints (Intent: Get Fact)
 
-Something new and unusual => Prints(Intent: Not found)
+Something new and unusual => Prints (Intent: Not found)

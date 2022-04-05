@@ -26,7 +26,7 @@ public:
      * @param in is given setnence.
      * @return tokenized sentence.
      */
-    std::vector<std::string> prepocess(const std::string & in) const;
+    std::vector<std::string> preprocess(const std::string & in) const;
 
     /**
      * Divides a text into tokens.
