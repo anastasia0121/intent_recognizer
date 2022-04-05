@@ -1,4 +1,4 @@
 {
-   "train_file" : "train.csv",
-   "templates_file" : "templates.txt"
+   "train_file" : "etc/train.csv",
+   "templates_file" : "etc/templates.txt"
 }
